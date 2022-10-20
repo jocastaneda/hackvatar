@@ -69,13 +69,14 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "hackvatar:build:production"
+              "browserTarget": "hackvatar:build:production",
+              "port": 8080
             },
             "development": {
               "browserTarget": "hackvatar:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "production"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
